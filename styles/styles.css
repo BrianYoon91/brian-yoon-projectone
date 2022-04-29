@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -224,4 +226,65 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+header {
+  text-transform: uppercase;
+}
+header h1, header li {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+header h1 {
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 1.1px;
+  font-size: 46px;
+}
+header p {
+  font-family: "Lora", sans-serif;
+}
+header li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+}
+
+.navBar li:first-child {
+  color: #539908;
+}
+
+html {
+  font-size: 125%;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../assets/home-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: block;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+header .navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
 }

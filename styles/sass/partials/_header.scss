@@ -1,0 +1,24 @@
+header {
+    background-image: url(../assets/home-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: block;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    
+    .navBar ul {
+        display: flex;
+        margin: 0;
+    }
+    
+        
+}
+
+
+
+

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+
+$raleway: 'Raleway', sans-serif;
+$lora: 'Lora', sans-serif; 
+
+// Text Colors  
+// Brown grey: #999999
+// Black: #2E2E2E
+// White: #F6F6F6
+// Black 2: #333333
+// Green: #539908
+    header {
+        text-transform: uppercase;
+        h1, li {
+            font-family: $raleway;
+            margin: 0; 
+        }
+        h1 {
+            font-weight: bold;
+            line-height: 24px;
+            letter-spacing: 1.1px;
+            font-size: 46px;
+        }
+
+        p {
+            font-family: $lora;
+        }
+
+        li {
+            list-style: none;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            padding: 0 20px;
+        }
+    }
+
+    .navBar li:first-child {
+        color: #539908;
+    }
