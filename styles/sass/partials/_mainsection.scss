@@ -1,0 +1,31 @@
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    .recipeText, .redLettuceBowl, .taco, .optionsText {
+        flex-basis: 50%;
+    }
+
+    .recipeText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+        
+
+    }
+
+    .optionsText ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        padding: 40px;
+
+        li {
+            flex-basis: 50%;
+            
+        }
+    }
+        
+}
+

@@ -11,9 +11,10 @@ $lora: 'Lora', sans-serif;
 // White: #F6F6F6
 // Black 2: #333333
 // Green: #539908
-    header {
+    body {
         text-transform: uppercase;
-        h1, li {
+        
+        h1, h2, li {
             font-family: $raleway;
             margin: 0; 
         }
@@ -26,6 +27,10 @@ $lora: 'Lora', sans-serif;
 
         p {
             font-family: $lora;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            text-transform: none;
         }
 
         li {
@@ -41,3 +46,5 @@ $lora: 'Lora', sans-serif;
     .navBar li:first-child {
         color: #539908;
     }
+
+    
