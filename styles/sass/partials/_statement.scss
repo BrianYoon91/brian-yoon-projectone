@@ -1,0 +1,30 @@
+.ourRestaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .chairImage {
+        margin: 250px 0 100px 0;
+        position: relative;
+
+        .pinkLogo {
+            position: absolute;
+            object-fit: none;
+            right: -260px;
+            top: -170px;
+        }
+        
+    }
+
+    span {
+        border-bottom: 4px solid #539908;
+        padding-bottom: 10px;
+        }
+
+    p {
+        margin: 100px 500px;
+        text-align: center;
+    }
+
+}
