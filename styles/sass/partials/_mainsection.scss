@@ -10,20 +10,22 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 40px;
+        padding: 50px;
         
 
     }
-
-    .optionsText ul {
+    .optionsText {
         display: flex;
-        flex-wrap: wrap;
-        margin: 50px;
-        padding: 40px;
-
-        li {
-            flex-basis: 50%;
+        padding: 20px;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
             
+            li {
+                flex-basis: 50%;
+                
+            }
         }
     }
         
