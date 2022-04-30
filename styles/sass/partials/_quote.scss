@@ -1,0 +1,79 @@
+.quoteMain {
+    background-color: rgb(209, 235, 166);
+
+    .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 100px; 
+
+        p {
+            color: black; 
+            text-align: center;
+            font-weight: normal;
+            margin-top: 80px;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0.6px;
+            position: relative;
+
+            i {
+                color: #F6F6F6;
+                font-size: 50px;
+                opacity: 0.5;
+            }
+
+            .fa-quote-left {
+                position: absolute;
+                left: -70px;
+                top: -15px;
+            }
+
+            .fa-quote-right {
+                position: absolute;
+                right: -70px;
+                bottom: 30px;
+            }
+
+            span {
+                display: block;
+                border: none;
+            }
+
+        }
+
+        span {
+        border-bottom: 4px solid #539908;
+        padding-bottom: 10px;
+        }
+
+    }
+        
+
+}
+
+.scrollIcon {
+    display: flex;
+    justify-content: space-between;
+
+    .fa-solid {
+        font-size: 40px;
+        color: #f6f6f6;
+        opacity: 0.5; 
+        &:hover {
+            color: grey;
+        }
+    }
+
+    
+
+    .fa-angle-left {
+        margin-right: 50px;
+
+    }
+
+
+}
+

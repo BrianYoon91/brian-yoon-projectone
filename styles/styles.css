@@ -271,6 +271,7 @@ html {
 }
 
 .wrapper {
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
@@ -309,6 +310,7 @@ header .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 50px 0;
+  max-width: 90%;
 }
 header .navBar ul {
   display: -webkit-box;
@@ -415,7 +417,7 @@ header .navBar ul {
   padding-bottom: 10px;
 }
 .ourRestaurant p {
-  margin: 100px 500px 200px 500px;
+  margin: 100px 300px 200px 300px;
   text-align: center;
 }
 
@@ -428,4 +430,78 @@ header .navBar ul {
 }
 .gallery img {
   width: 33.3333333333%;
+}
+
+.quoteMain {
+  background-color: rgb(209, 235, 166);
+}
+.quoteMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 200px 100px;
+}
+.quoteMain .wrapper p {
+  color: black;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 80px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+.quoteMain .wrapper p i {
+  color: #F6F6F6;
+  font-size: 50px;
+  opacity: 0.5;
+}
+.quoteMain .wrapper p .fa-quote-left {
+  position: absolute;
+  left: -70px;
+  top: -15px;
+}
+.quoteMain .wrapper p .fa-quote-right {
+  position: absolute;
+  right: -70px;
+  bottom: 30px;
+}
+.quoteMain .wrapper p span {
+  display: block;
+  border: none;
+}
+.quoteMain .wrapper span {
+  border-bottom: 4px solid #539908;
+  padding-bottom: 10px;
+}
+
+.scrollIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.scrollIcon .fa-solid {
+  font-size: 40px;
+  color: #f6f6f6;
+  opacity: 0.5;
+}
+.scrollIcon .fa-solid:hover {
+  color: grey;
+}
+.scrollIcon .fa-angle-left {
+  margin-right: 50px;
 }
