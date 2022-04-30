@@ -14,7 +14,7 @@ $lora: 'Lora', sans-serif;
     body {
         text-transform: uppercase;
         
-        h1, h2, li {
+        h1, h2, li, .theButton {
             font-family: $raleway;
             margin: 0; 
         }
@@ -31,6 +31,8 @@ $lora: 'Lora', sans-serif;
             line-height: 24px;
             letter-spacing: 0.3px;
             text-transform: none;
+            color: #999999;
+            font-weight: bold;
         }
 
         li {
@@ -47,4 +49,4 @@ $lora: 'Lora', sans-serif;
         color: #539908;
     }
 
-    
+   

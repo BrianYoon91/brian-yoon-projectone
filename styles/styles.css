@@ -231,7 +231,7 @@ html {
 body {
   text-transform: uppercase;
 }
-body h1, body h2, body li {
+body h1, body h2, body li, body .theButton {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
@@ -247,6 +247,8 @@ body p {
   line-height: 24px;
   letter-spacing: 0.3px;
   text-transform: none;
+  color: #999999;
+  font-weight: bold;
 }
 body li {
   list-style: none;
@@ -275,6 +277,18 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.theButton {
+  border: none;
+  background-color: #539908;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 header {
@@ -323,13 +337,35 @@ header .navBar ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 50px;
+  padding: 100px;
+}
+.recipes .recipeText span {
+  border-bottom: 4px solid #539908;
+  padding-bottom: 10px;
+}
+.recipes .recipeText .theButton {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 20px;
+}
+.recipes .recipeText P {
+  margin-top: 50px;
 }
 .recipes .optionsText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
+  background-color: #f6f6f6;
+  padding: 100px;
+}
+.recipes .optionsText h3 {
+  position: relative;
+}
+.recipes .optionsText i {
+  position: absolute;
+  left: -50px;
+  font-size: 35px;
 }
 .recipes .optionsText ul {
   display: -webkit-box;
