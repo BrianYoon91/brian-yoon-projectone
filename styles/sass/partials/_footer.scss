@@ -1,0 +1,54 @@
+#footer {
+    background-color: #333333;
+}
+
+.footerFlexBox {
+    display:flex;
+    justify-content: space-around;
+    padding: 100px 50px;
+
+    h3 {
+        color:#539908;
+        font-size: 30px;
+    }
+
+    h4 {
+        color: white;
+        font-size: 18px;
+    }
+
+    .footerContact, .recentPosts, .subscribe {
+        flex-basis: 33%;
+        padding: 20px;
+
+        ul {
+            padding: 0;
+            margin-top: 50px;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+
+        li {
+            margin-top: 15px;
+            padding: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #9999995e;
+
+        }
+
+    }
+
+
+}
+
+.footerContact {
+    span {
+        display: block;
+    }
+}
+
+.footerContact li:last-child, .recentPosts li:last-child {
+    border: none;   
+}

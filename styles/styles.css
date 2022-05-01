@@ -231,7 +231,7 @@ html {
 body {
   text-transform: uppercase;
 }
-body h1, body h2, body li, body .theButton {
+body h1, body h2, body li, body h3, body h4, body .theButton {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
@@ -243,6 +243,12 @@ body h1 {
 }
 body h2 {
   letter-spacing: 1.1px;
+}
+body h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.5px;
 }
 body p {
   font-family: "Lora", sans-serif;
@@ -264,6 +270,15 @@ body li {
 
 .navBar li:first-child {
   color: #539908;
+}
+
+.footerFlexBox li, .footerFlexBox p {
+  font-family: "Lora", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  color: #999999;
+  font-weight: normal;
 }
 
 html {
@@ -504,4 +519,51 @@ header .navBar ul {
 }
 .scrollIcon .fa-angle-left {
   margin-right: 50px;
+}
+
+#footer {
+  background-color: #333333;
+}
+
+.footerFlexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 100px 50px;
+}
+.footerFlexBox h3 {
+  color: #539908;
+  font-size: 30px;
+}
+.footerFlexBox h4 {
+  color: white;
+  font-size: 18px;
+}
+.footerFlexBox .footerContact, .footerFlexBox .recentPosts, .footerFlexBox .subscribe {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding: 20px;
+}
+.footerFlexBox .footerContact ul, .footerFlexBox .recentPosts ul, .footerFlexBox .subscribe ul {
+  padding: 0;
+  margin-top: 50px;
+}
+.footerFlexBox .footerContact p, .footerFlexBox .recentPosts p, .footerFlexBox .subscribe p {
+  margin-top: 50px;
+}
+.footerFlexBox .footerContact li, .footerFlexBox .recentPosts li, .footerFlexBox .subscribe li {
+  margin-top: 15px;
+  padding: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.368627451);
+}
+
+.footerContact span {
+  display: block;
+}
+
+.footerContact li:last-child, .recentPosts li:last-child {
+  border: none;
 }
