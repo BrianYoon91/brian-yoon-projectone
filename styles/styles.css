@@ -310,6 +310,11 @@ img {
   font-weight: bold;
 }
 
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 header {
   background-image: url(../assets/home-1.jpeg);
   background-position: center;
@@ -531,7 +536,10 @@ header .navBar ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 100px 50px;
+  padding: 50px 0;
+}
+.footerFlexBox h3, .footerFlexBox h4 {
+  letter-spacing: 1px;
 }
 .footerFlexBox h3 {
   color: #539908;
@@ -545,6 +553,7 @@ header .navBar ul {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
   padding: 20px;
+  margin: 50px;
 }
 .footerFlexBox .footerContact ul, .footerFlexBox .recentPosts ul, .footerFlexBox .subscribe ul {
   padding: 0;
@@ -566,4 +575,49 @@ header .navBar ul {
 
 .footerContact li:last-child, .recentPosts li:last-child {
   border: none;
+}
+
+.arrowButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.368627451);
+}
+.arrowButton #email {
+  background-color: rgba(128, 128, 128, 0.582);
+  color: #d1cdcd;
+  border: none;
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  padding: 10px 5px;
+  font-size: 13px;
+}
+.arrowButton button {
+  background-color: #539908;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+}
+.socialIcons i {
+  color: white;
+  padding: 10px 15px 0 0;
+}
+
+#footNote {
+  background-color: #2e2e2e;
+}
+#footNote p {
+  margin: 0;
+  padding: 10px 70px;
+  font-size: 13px;
+  color: #d1cdcd;
 }

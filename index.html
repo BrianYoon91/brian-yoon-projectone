@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/741551e637.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/741551e637.js" crossorigin="anonymous"></script>
     <title>Delicious</title>
 </head>
 <body>
     
-    <header>
+    <header id="homePage">
         <div class="wrapper">
             <h1>Delicious</h1>
                 <nav class="navBar">
                     <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Recipes</li>
-                            <li>Nutrition</li>
-                            <li>Blog</li>
-                            <li>Shop</li>
-                            <li>Contact</li>
+                            <li><a href="#homePage">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Recipes</a></li>
+                            <li><a>Nutrition</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>Contact</a></li>
                             <li><i class="fa-solid fa-bag-shopping"></i></li>
                             <li><i class="fa-solid fa-magnifying-glass"></i></li>
                     </ul>
@@ -149,15 +149,18 @@
                         <h4>Subscribe Now</h4>
                         <p>Get all of our newest recipes immediately in your inbox!</p>
 
-                        <label for="email" id="email"></label><input type="email" placeholder="enter your email address" id="email">
 
-                        <button></button>
-                    
+                        <div class="arrowButton">
+                            <label for="email" id="email"></label><input type="email" placeholder="Enter your email" id="email">
+                            <button><i class="fa-solid fa-right-long"></i></button>
+                        </div>
 
                         <div class="socialIcons">
-
-
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <i class="fa-brands fa-instagram"></i>
                         </div>
+
                 </div>
 
             </div>
@@ -165,9 +168,9 @@
     </footer>
 
 
-    <footer>
+    <footer id="footNote">
         <div class="wrapper">
-            <p>Copyrights 2022 by Juno College</p>
+            <p>Copyrights © 2022 by Juno College</p>
         </div>
     </footer>
 
