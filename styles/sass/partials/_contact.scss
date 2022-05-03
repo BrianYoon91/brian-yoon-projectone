@@ -1,0 +1,63 @@
+#contact {
+    background-image: url(../assets/contact-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: block;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        max-width: 90%;
+    }
+    
+    .navBar ul {
+        display: flex;
+        margin: 0;
+    }
+    
+    .navBar li:nth-child(7) {
+        color: #539908;
+        
+    }
+        
+}
+
+.dragonFruitImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.formSection {
+    display: flex; 
+
+    .formContainer {
+        flex-basis: 65%;
+        
+        .contactForm {
+            display: flex;
+            flex-wrap: wrap;
+
+            input, textarea {
+                background-color: #f6f6f6;
+                color: 
+            }
+        }
+    }
+
+    .contactDetails {
+        flex-basis: 35%;
+    }
+}
+
+#email, #name {
+    width: 50%;
+}
+
+#subject, #message {
+    width: 100%;
+    display: block;
+}

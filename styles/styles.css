@@ -268,10 +268,6 @@ body li {
   padding: 0 20px;
 }
 
-.navBar li:first-child {
-  color: #539908;
-}
-
 .footerFlexBox li, .footerFlexBox p {
   font-family: "Lora", sans-serif;
   font-size: 13px;
@@ -337,6 +333,9 @@ header .navBar ul {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+}
+header .navBar li:first-child {
+  color: #539908;
 }
 
 .recipes {
@@ -620,4 +619,72 @@ header .navBar ul {
   padding: 10px 70px;
   font-size: 13px;
   color: #d1cdcd;
+}
+
+#contact {
+  background-image: url(../assets/contact-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  display: block;
+}
+#contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+  max-width: 90%;
+}
+#contact .navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+#contact .navBar li:nth-child(7) {
+  color: #539908;
+}
+
+.dragonFruitImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.formSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.formSection .formContainer {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+.formSection .formContainer .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.formSection .formContainer .contactForm input, .formSection .formContainer .contactForm textarea {
+  background-color: #f6f6f6;
+}
+.formSection .contactDetails {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+#email, #name {
+  width: 50%;
+}
+
+#subject, #message {
+  width: 100%;
+  display: block;
 }
