@@ -57,7 +57,7 @@ $lora: 'Lora', sans-serif;
         }
     }
 
-    .footerFlexBox {
+    .footerFlexBox, .contactDetails {
     
         li, p {
             font-family: $lora;
@@ -69,3 +69,43 @@ $lora: 'Lora', sans-serif;
             
         }
     }
+
+    // Contact form typography
+
+
+    .formSection {
+        
+
+        input, textarea {
+            background-color: #f6f6f6;
+            font-family: $lora;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            text-transform: none;
+            color: #2e2e2e;
+            font-weight: normal;
+            border: none;
+        }
+
+        .contactDetails {
+            p {
+                font-weight: normal;
+
+                .workingHour {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color:#2e2e2e;
+                    font-style: normal;
+                    font-family: $raleway;
+
+                }
+
+                span {
+                    font-style: italic;
+                }
+            }
+        }
+        
+    }
+

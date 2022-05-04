@@ -36,28 +36,86 @@
 
     .formContainer {
         flex-basis: 65%;
+        padding-left: 200px;
+        h2 {
+            padding: 0 15px;
+        }
         
         .contactForm {
             display: flex;
             flex-wrap: wrap;
 
-            input, textarea {
-                background-color: #f6f6f6;
-                color: 
+            input, textarea, 
+            button {
+                padding: 15px;
+                margin: 10px;
             }
+
+            button {
+                font-size: 16px;
+                font-family: $raleway;
+                color:#539908;
+                text-transform: uppercase;
+                font-weight: bold;
+                border: none;
+                background-color: white;
+            }
+
+            textarea {
+                resize: none;
+            }
+
         }
     }
 
     .contactDetails {
         flex-basis: 35%;
+        background-color: #f6f6f6;
+        padding-right: 200px;
+        h4 {
+            margin-top: 50px;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        ul {
+            padding: 0;
+            
+            li {
+                padding: 0 0 20px 0;
+                
+                span {
+                    display: block;
+                    
+                }
+            }
+        }
+        
     }
 }
 
-#email, #name {
-    width: 50%;
+.contactForm #email, #name {
+    width: calc(50% - 20px);
 }
 
 #subject, #message {
     width: 100%;
     display: block;
+}
+
+.formContainer, 
+.contactDetails {
+
+
+    .wrapper {
+        padding: 100px 0;
+
+        h2 {
+            padding-bottom: 50px;
+        }
+    }
+
+    
 }
