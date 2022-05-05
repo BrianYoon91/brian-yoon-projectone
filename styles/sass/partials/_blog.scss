@@ -1,0 +1,58 @@
+#blog {
+    background-image: url(../assets/blog-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: block;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        max-width: 90%;
+    }
+    
+    .navBar ul {
+        display: flex;
+        margin: 0;
+    }
+    
+    .navBar li:nth-child(5) {
+        color: #539908;
+        
+    }
+        
+}
+
+
+.recipeBlog {
+
+
+    .hashtags {
+        margin-left: 10px;
+    }
+
+    P ~ h4 {
+        padding-top: 30px;
+    }
+
+    .socialIcons{ 
+        padding: 30px 0; 
+    
+
+        i {
+        color:#999999; 
+        padding: 0;
+        font-size: 20px;
+        margin: 0 15px;
+
+        }
+
+        .fa-facebook-f {
+            margin-left: 30px;
+        }
+
+    }
+}
+
+

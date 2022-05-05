@@ -11,6 +11,7 @@ $lora: 'Lora', sans-serif;
 // White: #F6F6F6
 // Black 2: #333333
 // Green: #539908
+
     body {
         text-transform: uppercase;
         
@@ -37,7 +38,7 @@ $lora: 'Lora', sans-serif;
             
         }
 
-        p {
+        p, .hashtags {
             font-family: $lora;
             font-size: 14px;
             line-height: 24px;
@@ -56,6 +57,8 @@ $lora: 'Lora', sans-serif;
             padding: 0 20px;
         }
     }
+
+// Footer Typography
 
     .footerFlexBox, .contactDetails {
     
@@ -108,4 +111,26 @@ $lora: 'Lora', sans-serif;
         }
         
     }
+
+// Blog typography
+
+.recipeBlog {
+    h4 {
+        font-size: 16px;
+    }
+
+    p, .hashtags {
+        font-weight: normal;
+    }
+
+    .blogDate  {
+        color: black;
+        font-family: $raleway;
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    
+    }
+}
+
 
