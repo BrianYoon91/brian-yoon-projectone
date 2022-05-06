@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Home</title>
 </head>
-<body>
+<body class="blogBody">
     <div id="blog">
         <div class="wrapper">
             <h1>Delicious</h1>
@@ -55,8 +55,11 @@
 
             </div>
 
-            <div class="portraitAuthor">
-                <img src="./assets/blog-2.jpeg" alt="">
+            <div class="aboutAuthor">
+
+                <div class="authorPortrait">
+                    <img src="./assets/blog-2.jpeg" alt="">
+                </div>
 
                 <div class="authorBio">
                     <h4>Sally Lucas</h4>
@@ -74,17 +77,17 @@
                         <li>
                             <img src="./assets/blog-3.jpeg">
                             <h4>How to Bake The Perfect Cake</h4>
-                            <p>July 11, 2018 | by Admin | in Recipes</p>
+                            <p>July 11, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
                         </li>
                         <li>
                             <img src="./assets/blog-4.jpeg">
                             <h4>Floral Cupcakes</h4>
-                            <p>July 19, 2018 | by Admin | in Recipes</p>
+                            <p>July 19, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
                         </li>
                         <li>
                             <img src="./assets/blog-5.jpeg">
                             <h4>Single Post With Image</h4>
-                            <p>July 22, 2018 | by Admin | in Recipes</p>
+                            <p>July 22, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
                         </li>
                     </ul>
                 </div>
@@ -93,29 +96,38 @@
 
             <div class="commentSection">
 
-                <div class="commentPortrait">
-                    <img src="./assets/blog-6.jpeg" alt="older white lady with awkward smile">
+                <h5>02 Comments</h5>
+
+                <div class="userCommentFlexBox">
+
+                    <div class="commentPortrait">
+                        <img src="./assets/blog-6.jpeg" alt="older white lady with awkward smile">
+                    </div>
+
+                    <div class="userComments">
+                        <i class="fa-solid fa-caret-left"></i>
+                        <h6>Lucatony Avaro <span>- Web Developer</span></h6>
+
+                        <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+                        <p>May 4,2022 at 15 hours ago</p>
+                    </div>
+
                 </div>
 
-                <div class="userComments">
-
-                    <h5>Lucatony Avaro <span>- Web Developer</span></h5>
-
-                    <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-                    <p>May 4,2022 at 15 hours ago</p>
-
-                </div>
-
-                <div class="userComments">
-
+                <div class="userCommentFlexBox">
+                    
                     <div class="commentPortrait">
                         <img src="./assets/blog-7.jpeg" alt="lady with a fedora on looking to her left">
                     </div>
+                    
+                    <div class="userComments">
+                        <i class="fa-solid fa-caret-left"></i>
+                        <h6>Brian Hudson <span>- Web Developer</span></h6>
 
-                    <h5>Brian Hudson <span>- Web Developer</span></h5>
+                        <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.</p>
+                        <p>May 4,2022 at 15 hours ago</p>
 
-                    <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.</p>
-                    <p>May 4,2022 at 15 hours ago</p>
+                    </div>
 
                 </div>
 

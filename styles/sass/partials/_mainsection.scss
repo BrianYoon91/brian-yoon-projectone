@@ -1,8 +1,24 @@
 .recipes {
-    display: flex;
-    flex-wrap: wrap;
-    .recipeText, .redLettuceBowl, .taco, .optionsText {
+    
+    .redLettuceFlexbox, 
+    .tacoFlexbox {
+        display: flex;
+    }
+
+    .redLettuceBowl, 
+    .recipeText,
+    .taco,
+    .optionsText {
         flex-basis: 50%;
+    }
+
+    .redLettuceBowl,
+    .taco {
+
+        img {
+            height: 100%;
+        }
+        
     }
 
     .recipeText {
@@ -11,6 +27,7 @@
         justify-content: center;
         text-align: center;
         padding: 100px;
+        
 
         span {
             border-bottom: 4px solid #539908;
@@ -27,6 +44,7 @@
         }
         
     }
+
     .optionsText {
         display: flex;
         padding: 20px;

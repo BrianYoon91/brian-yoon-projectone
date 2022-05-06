@@ -231,7 +231,8 @@ html {
 body {
   text-transform: uppercase;
 }
-body h1, body h2, body li, body h3, body h4, body .theButton {
+body h1, body h2, body li, body h3, body h4, body h5, body h6,
+body .theButton {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
@@ -302,18 +303,37 @@ body li {
   font-style: italic;
 }
 
-.recipeBlog h4 {
-  font-size: 16px;
-}
-.recipeBlog p, .recipeBlog .hashtags {
+.blogBody p, .blogBody .hashtags {
   font-weight: normal;
 }
+
 .recipeBlog .blogDate {
   color: black;
   font-family: "Raleway", sans-serif;
   font-size: 13px;
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.commentSection h5 {
+  letter-spacing: 1px;
+}
+
+.userComments h6 {
+  text-transform: none;
+  font-size: 16px;
+  color: #2e2e2e;
+}
+.userComments h6 span {
+  font-weight: normal;
+}
+.userComments p {
+  color: #2e2e2e;
+}
+.userComments p:last-child {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
 }
 
 html {
@@ -328,7 +348,7 @@ html {
 
 img {
   width: 100%;
-  height: 100%;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -377,16 +397,22 @@ header .navBar li:first-child {
   color: #539908;
 }
 
-.recipes {
+.recipes .redLettuceFlexbox,
+.recipes .tacoFlexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-.recipes .recipeText, .recipes .redLettuceBowl, .recipes .taco, .recipes .optionsText {
+.recipes .redLettuceBowl,
+.recipes .recipeText,
+.recipes .taco,
+.recipes .optionsText {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+.recipes .redLettuceBowl img,
+.recipes .taco img {
+  height: 100%;
 }
 .recipes .recipeText {
   display: -webkit-box;
@@ -738,7 +764,7 @@ header .navBar li:first-child {
   padding-right: 200px;
 }
 .formSection .contactDetails h4 {
-  margin-top: 50px;
+  margin: 50px 0 20px 0;
 }
 .formSection .contactDetails p {
   margin-top: 0;
@@ -815,4 +841,80 @@ header .navBar li:first-child {
 }
 .recipeBlog .socialIcons .fa-facebook-f {
   margin-left: 30px;
+}
+
+.aboutAuthor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.aboutAuthor .authorPortrait {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+.aboutAuthor .authorBio {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+  padding: 30px;
+  margin-left: 30px;
+}
+.aboutAuthor .authorBio p {
+  font-weight: normal;
+}
+
+.relatedPosts .blogGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+.relatedPosts .blogGallery ul li {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: block;
+  padding: 0;
+}
+.relatedPosts .blogGallery ul li span {
+  color: black;
+}
+
+.userCommentFlexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+.userCommentFlexBox .userComments {
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 0 0 30px 30px;
+  position: relative;
+}
+.userCommentFlexBox .userComments .fa-caret-left {
+  position: absolute;
+  color: #f6f6f6;
+  left: -7px;
+}
+.userCommentFlexBox .userComments h6 {
+  margin: 0;
+}
+.userCommentFlexBox .commentPortrait {
+  -ms-flex-preferred-size: 7%;
+      flex-basis: 7%;
 }
