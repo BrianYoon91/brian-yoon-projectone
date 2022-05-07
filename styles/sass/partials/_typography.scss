@@ -57,6 +57,18 @@ $lora: 'Lora', sans-serif;
             letter-spacing: 0.5px;
             padding: 0 20px;
         }
+
+        input, textarea {
+            
+            font-family: $lora;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            text-transform: none;
+            color: #2e2e2e;
+            font-weight: normal;
+            border: none;
+        }
     }
 
 // Footer Typography
@@ -78,18 +90,9 @@ $lora: 'Lora', sans-serif;
 
 
     .formSection {
-        
 
         input, textarea {
             background-color: #f6f6f6;
-            font-family: $lora;
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: 0.3px;
-            text-transform: none;
-            color: #2e2e2e;
-            font-weight: normal;
-            border: none;
         }
 
         .contactDetails {
@@ -130,6 +133,12 @@ $lora: 'Lora', sans-serif;
         margin-bottom: 50px;
     
     }
+
+    .tagsBox {
+        h4 {
+            font-size: 16px;
+        }
+    }
 }
 
 .commentSection {
@@ -142,7 +151,7 @@ $lora: 'Lora', sans-serif;
 .userComments {
     h6 {
         text-transform: none;
-        font-size: 16px;
+        font-size: 14px;
         color: #2e2e2e;
         span {
             font-weight: normal;
@@ -158,4 +167,23 @@ $lora: 'Lora', sans-serif;
         font-weight: 700;
         font-size: 12px;
     }
+}
+
+.commentFormBox {
+    h4 {
+        letter-spacing: 1px;
+        color:#2e2e2e;
+        font-size: 18px;
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    input,
+    textarea {
+        font-family: $lora;
+    }
+    
+
 }

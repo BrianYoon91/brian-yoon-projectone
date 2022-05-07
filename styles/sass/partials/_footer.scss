@@ -64,14 +64,17 @@
     display: flex; 
     padding-bottom: 30px;
     border-bottom: 1px solid #9999995e;
+
     
-    #email {
+    
+    input#email {
         background-color: rgba(128, 128, 128, 0.582);
         color: #d1cdcd;
         border: none;
         font-family: $lora;
         font-style: italic;
         font-size: 13px;
+        padding: 10px;
     }
 
     button {

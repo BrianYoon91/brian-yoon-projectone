@@ -13,6 +13,7 @@ header {
         padding: 50px 0;
         max-width: 90%;
     }
+
     
     .navBar ul {
         display: flex;
@@ -23,7 +24,33 @@ header {
         color: #539908;
         
     }
+    
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 80vh;
         
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+
+        .navBar ul {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        .navBar li {
+            padding: 5px 0;
+        }
+    }
 }
 
 

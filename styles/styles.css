@@ -268,6 +268,16 @@ body li {
   letter-spacing: 0.5px;
   padding: 0 20px;
 }
+body input, body textarea {
+  font-family: "Lora", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  color: #2e2e2e;
+  font-weight: normal;
+  border: none;
+}
 
 .footerFlexBox li, .footerFlexBox p, .contactDetails li, .contactDetails p {
   font-family: "Lora", sans-serif;
@@ -280,14 +290,6 @@ body li {
 
 .formSection input, .formSection textarea {
   background-color: #f6f6f6;
-  font-family: "Lora", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  text-transform: none;
-  color: #2e2e2e;
-  font-weight: normal;
-  border: none;
 }
 .formSection .contactDetails p {
   font-weight: normal;
@@ -314,6 +316,9 @@ body li {
   margin-top: 0;
   margin-bottom: 50px;
 }
+.recipeBlog .tagsBox h4 {
+  font-size: 16px;
+}
 
 .commentSection h5 {
   letter-spacing: 1px;
@@ -321,7 +326,7 @@ body li {
 
 .userComments h6 {
   text-transform: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #2e2e2e;
 }
 .userComments h6 span {
@@ -334,6 +339,19 @@ body li {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 12px;
+}
+
+.commentFormBox h4 {
+  letter-spacing: 1px;
+  color: #2e2e2e;
+  font-size: 18px;
+}
+.commentFormBox p {
+  font-style: italic;
+}
+.commentFormBox input,
+.commentFormBox textarea {
+  font-family: "Lora", sans-serif;
 }
 
 html {
@@ -397,6 +415,37 @@ header .navBar li:first-child {
   color: #539908;
 }
 
+@media (max-width: 480px) {
+  header {
+    height: 80vh;
+  }
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .wrapper h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  header .navBar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  header .navBar li {
+    padding: 5px 0;
+  }
+}
 .recipes .redLettuceFlexbox,
 .recipes .tacoFlexbox {
   display: -webkit-box;
@@ -648,13 +697,14 @@ header .navBar li:first-child {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(153, 153, 153, 0.368627451);
 }
-.arrowButton #email {
+.arrowButton input#email {
   background-color: rgba(128, 128, 128, 0.582);
   color: #d1cdcd;
   border: none;
   font-family: "Lora", sans-serif;
   font-style: italic;
   font-size: 13px;
+  padding: 10px;
 }
 .arrowButton button {
   background-color: #539908;
@@ -824,22 +874,34 @@ header .navBar li:first-child {
   color: #539908;
 }
 
+.recipeBlog {
+  margin-top: 170px;
+}
 .recipeBlog .hashtags {
   margin-left: 10px;
 }
 .recipeBlog P ~ h4 {
   padding-top: 30px;
 }
-.recipeBlog .socialIcons {
-  padding: 30px 0;
+.recipeBlog p:nth-child(7) {
+  padding-bottom: 50px;
 }
-.recipeBlog .socialIcons i {
+.recipeBlog .tagsBox {
+  margin: 30px 0;
+  padding-top: 50px;
+  border-top: 1px solid rgba(153, 153, 153, 0.368627451);
+  border-bottom: 1px solid rgba(153, 153, 153, 0.368627451);
+}
+.recipeBlog .tagsBox .socialIcons {
+  padding: 30px 0 50px 0;
+}
+.recipeBlog .tagsBox .socialIcons i {
   color: #999999;
   padding: 0;
   font-size: 20px;
   margin: 0 15px;
 }
-.recipeBlog .socialIcons .fa-facebook-f {
+.recipeBlog .tagsBox .socialIcons .fa-facebook-f {
   margin-left: 30px;
 }
 
@@ -847,6 +909,9 @@ header .navBar li:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 30px 0 50px 0;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.368627451);
 }
 .aboutAuthor .authorPortrait {
   -ms-flex-preferred-size: 15%;
@@ -880,13 +945,17 @@ header .navBar li:first-child {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.368627451);
 }
 .relatedPosts .blogGallery ul li {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   display: block;
   padding: 0;
+}
+.relatedPosts .blogGallery ul li h4 {
+  margin-top: 20px;
 }
 .relatedPosts .blogGallery ul li span {
   color: black;
@@ -902,19 +971,58 @@ header .navBar li:first-child {
   -ms-flex-preferred-size: 95%;
       flex-basis: 95%;
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   margin: 0 0 30px 30px;
   position: relative;
-}
-.userCommentFlexBox .userComments .fa-caret-left {
-  position: absolute;
-  color: #f6f6f6;
-  left: -7px;
 }
 .userCommentFlexBox .userComments h6 {
   margin: 0;
 }
+.userCommentFlexBox .userComments:after {
+  content: " ";
+  position: absolute;
+  left: -13px;
+  top: 15px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid #f6f6f6;
+  border-left: none;
+  border-bottom: 15px solid transparent;
+}
 .userCommentFlexBox .commentPortrait {
   -ms-flex-preferred-size: 7%;
       flex-basis: 7%;
+}
+
+.commentSection {
+  margin: 30px 0;
+}
+
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+.commentForm #name,
+.commentForm #email,
+.commentForm #website {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+.commentForm #comment {
+  width: 100%;
+}
+.commentForm input,
+.commentForm textarea {
+  border: 1px solid rgba(153, 153, 153, 0.368627451);
+  padding: 10px;
+}
+.commentForm textarea {
+  resize: none;
+  margin: 20px 0;
 }

@@ -25,6 +25,7 @@
 }
 
 .recipeBlog {
+    margin-top: 170px;
 
     .hashtags {
         margin-left: 10px;
@@ -34,26 +35,42 @@
         padding-top: 30px;
     }
 
-    .socialIcons{ 
-        padding: 30px 0; 
-
-        i {
-        color:#999999; 
-        padding: 0;
-        font-size: 20px;
-        margin: 0 15px;
-
-        }
-
-        .fa-facebook-f {
-            margin-left: 30px;
-        }
-
+    p:nth-child(7) {
+        padding-bottom: 50px;
     }
+
+    .tagsBox {
+        margin: 30px 0;
+        padding-top: 50px;
+        border-top: 1px solid #9999995e;
+        border-bottom: 1px solid #9999995e;
+
+        .socialIcons{ 
+            padding: 30px 0 50px 0;  
+
+            i {
+            color:#999999; 
+            padding: 0;
+            font-size: 20px;
+            margin: 0 15px;
+
+            }
+
+            .fa-facebook-f {
+                margin-left: 30px;
+            }
+
+        }
+    }
+
 }
+
 
 .aboutAuthor {
     display: flex; 
+    padding: 30px 0 50px 0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #9999995e; 
 
     .authorPortrait {
         flex-basis: 15%;
@@ -80,11 +97,17 @@
     .blogGallery ul {
         display: flex;
         justify-content: space-between;
-        padding: 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #9999995e; 
+
         li {
             flex-basis: 30%;
             display: block;
             padding: 0;
+
+            h4 {
+                margin-top: 20px;
+            }
 
             span {
                 color: black;
@@ -102,20 +125,26 @@
     .userComments {
         flex-basis: 95%;
         background-color: #f6f6f6;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         margin: 0 0 30px 30px;
         position: relative;
 
-        .fa-caret-left {
-            position: absolute;
-            color:#f6f6f6;
-            left: -7px;
-        }
         
         h6 {
             margin: 0;
         }
         
+    }
+
+    .userComments:after {
+        content: " ";
+        position: absolute;
+        left: -13px;
+        top: 15px;
+        border-top: 15px solid transparent;
+        border-right: 15px solid #f6f6f6;
+        border-left: none;
+        border-bottom: 15px solid transparent;
     }
 
     .commentPortrait {
@@ -126,3 +155,35 @@
 
 }
 
+.commentSection {
+    margin: 30px 0;
+}
+
+.commentForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+        #name, 
+        #email, 
+        #website {
+            flex-basis: 32%;
+        }
+
+        #comment {
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            border: 1px solid #9999995e;
+            padding: 10px;
+        }
+
+        textarea {
+            resize: none;
+            margin: 20px 0;
+        }
+
+
+}
