@@ -411,41 +411,14 @@ header .navBar ul {
   display: flex;
   margin: 0;
 }
+header .navBar ul a:hover, header .navBar ul a:focus,
+header .navBar ul i:hover, header .navBar ul i:focus {
+  color: rgb(104, 241, 104);
+}
 header .navBar li:first-child {
   color: #539908;
 }
 
-@media (max-width: 480px) {
-  header {
-    height: 80vh;
-  }
-  header .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  header .wrapper h1 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  header .navBar ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0;
-  }
-  header .navBar li {
-    padding: 5px 0;
-  }
-}
 .recipes .redLettuceFlexbox,
 .recipes .tacoFlexbox {
   display: -webkit-box;
@@ -480,6 +453,7 @@ header .navBar li:first-child {
 .recipes .recipeText span {
   border-bottom: 4px solid #539908;
   padding-bottom: 10px;
+  display: inline-block;
 }
 .recipes .recipeText .theButton {
   -ms-flex-item-align: center;
@@ -1025,4 +999,154 @@ header .navBar li:first-child {
 .commentForm textarea {
   resize: none;
   margin: 20px 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    height: 60vh;
+    background-color: rgba(240, 236, 236, 0.89);
+  }
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .wrapper h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  header .navBar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  header .navBar li {
+    padding: 5px 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .recipes .redLettuceFlexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipes .tacoFlexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .recipes .redLettuceBowl,
+.recipes .recipeText,
+.recipes .taco,
+.recipes .optionsText {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 10px;
+  }
+
+  .recipes .recipeText h2 span {
+    border: none;
+  }
+  .recipes .optionsText h3 {
+    text-align: center;
+  }
+  .recipes .optionsText p {
+    text-align: center;
+  }
+  .recipes .optionsText i {
+    left: -1000px;
+  }
+  .recipes .optionsText ul {
+    padding: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipes .optionsText ul li {
+    padding: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .ourRestaurant .chairImage {
+    margin: 50px 0;
+    position: relative;
+  }
+  .ourRestaurant .chairImage .pinkLogo {
+    position: absolute;
+    -o-object-fit: none;
+       object-fit: none;
+    right: -1000px;
+    top: -170px;
+  }
+  .ourRestaurant h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .ourRestaurant span {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .ourRestaurant p {
+    margin: 0 0 50px 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .gallery img {
+    width: 50%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .quoteMain .wrapper {
+    padding: 20px 0;
+  }
+  .quoteMain .wrapper h2 {
+    font-size: 28px;
+  }
+  .quoteMain .wrapper P {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .quoteMain .wrapper span {
+    border-bottom: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footerFlexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerFlexBox .footerContact, .footerFlexBox .recentPosts, .footerFlexBox .subscribe {
+    margin: 0;
+  }
+  .footerFlexBox h3, .footerFlexBox h4,
+.footerFlexBox li, .footerFlexBox p {
+    text-align: center;
+  }
+  .footerFlexBox .arrowButton, .footerFlexBox .socialIcons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  #footNote p {
+    padding: 10px 0;
+    text-align: center;
+  }
 }

@@ -1,0 +1,192 @@
+// Header Phone Media Query (phone) 
+@media (min-width:320px) and (max-width: 480px) {
+    header {
+        height: 60vh;
+        background-color: rgba(240, 236, 236, 0.89);
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+
+        .navBar ul {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        .navBar li {
+            padding: 5px 0;
+        }
+    }
+}
+
+// Main section popular recipe (phone)
+
+@media (min-width:320px) and (max-width: 480px) {
+
+.recipes {
+    
+    .redLettuceFlexbox {
+        flex-direction: column;
+    }
+
+    .tacoFlexbox {
+        flex-direction: column-reverse;
+    }
+
+    .redLettuceBowl, 
+    .recipeText,
+    .taco,
+    .optionsText {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+}
+
+.recipes {
+    .recipeText {
+        
+        h2 span {
+            border: none;
+        }
+    }
+    .optionsText {
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        i {
+            left: -1000px;
+        }
+
+        ul {
+            padding: 0;
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+
+            li {
+                padding: 0; 
+            }
+        }
+    }
+
+}
+
+}
+
+// Restuarant statement media query. Phone
+
+@media (min-width:320px) and (max-width: 480px) {
+
+
+.ourRestaurant {
+
+    .chairImage {
+        margin: 50px 0;
+        position: relative;
+
+        .pinkLogo {
+            position: absolute;
+            object-fit: none;
+            right: -1000px;
+            top: -170px;
+        }
+        
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    span {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    p {
+        margin: 0 0 50px 0;
+    }
+
+}
+
+}
+
+// Image Gallery (Phone) 
+@media (min-width:320px) and (max-width: 480px) {
+    .gallery {
+        
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+// Quote Media Query 
+
+@media (min-width:320px) and (max-width: 480px) {
+    .quoteMain {
+        .wrapper {
+            padding: 20px 0;
+                
+            h2 {
+                font-size: 28px;
+            }
+                
+            P {
+                margin-top: 20px;
+                font-size: 18px;
+            }
+
+            span {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+// Footer Media Query 
+
+@media (min-width:320px) and (max-width: 480px) {
+    .footerFlexBox {
+        flex-direction: column;
+
+        .footerContact, .recentPosts, .subscribe {
+            margin: 0;
+        }
+
+        h3, h4, 
+        li, p {
+            text-align: center;
+        }
+
+        .arrowButton, .socialIcons {
+            justify-content: center;
+        }
+    
+
+    }
+
+    #footNote p {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+}
+
+
