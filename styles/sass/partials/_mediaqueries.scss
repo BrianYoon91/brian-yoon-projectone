@@ -1,5 +1,5 @@
 // Header Phone Media Query (phone) 
-@media (min-width:320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     header {
         height: 60vh;
         background-color: rgba(240, 236, 236, 0.89);
@@ -26,120 +26,298 @@
     }
 }
 
-// Main section popular recipe (phone)
+// Header Landscape phone to portrait. 
+@media (max-width: 768px) {
+    header {
+        height: 60vh;
+        background-color: rgba(240, 236, 236, 0.89);
 
-@media (min-width:320px) and (max-width: 480px) {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
 
-.recipes {
-    
-    .redLettuceFlexbox {
-        flex-direction: column;
+            h1 {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+
+        .navBar ul {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        .navBar li {
+            padding: 5px 0;
+        }
     }
+}
 
-    .tacoFlexbox {
-        flex-direction: column-reverse;
+
+@media (max-width: 980px) {
+    header {
+        height: 70vh;
+        background-color: rgba(240, 236, 236, 0.89);
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                text-align: start;
+                margin-bottom: 50px;
+            }
+        }
+
+        .navBar ul {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+        }
+
+        .navBar li {
+            padding: 5px 0;
+        }
     }
+}
 
-    .redLettuceBowl, 
-    .recipeText,
-    .taco,
-    .optionsText {
-        flex-basis: 100%;
-        padding: 10px;
+// Main section popular recipe (Phone)
+
+    @media (max-width: 480px) {
+
+    .recipes {
+        
+        .redLettuceFlexbox {
+            flex-direction: column;
+        }
+
+        .tacoFlexbox {
+            flex-direction: column-reverse;
+        }
+
+        .redLettuceBowl, 
+        .recipeText,
+        .taco,
+        .optionsText {
+            flex-basis: 100%;
+            padding: 10px;
+        }
+
+    }
+    .recipes {
+
+        .recipeText {
+            
+            h2 span {
+                border: none;
+            }
+        }
+        .optionsText {
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            i {
+                left: -1000px;
+            }
+
+            ul {
+                padding: 0;
+                flex-wrap: nowrap;
+                flex-direction: column;
+
+
+                li {
+                    padding: 0; 
+                }
+            }
+        }
+
+    }
+}
+// Main section popular recipe Landscape phone to portrait
+
+@media (max-width: 768px) {
+    .recipes {
+        
+        .redLettuceFlexbox {
+            flex-direction: column;
+
+            .recipeText {
+                padding: 20px 0;
+            }
+        }
+
+        .tacoFlexbox {
+            flex-direction: column-reverse;
+        }
+
+        .redLettuceBowl, 
+        .recipeText,
+        .taco,
+        .optionsText {
+            flex-basis: 100%;
+        }
     }
 
 }
 
-.recipes {
-    .recipeText {
+@media (max-width: 980px) {
+    .recipes {
         
-        h2 span {
-            border: none;
+        .redLettuceBowl, 
+        .recipeText,
+        .taco,
+        .optionsText {
+            flex-basis: 50%;
+            padding: 0;
         }
-    }
-    .optionsText {
 
-        h3 {
+        .recipeText, 
+        .optionsText {
+            padding: 0 10px;
+        }
+
+        .optionsText {
+
+            p {
+            font-size: 11px;
+            line-height: 17px;
+            }
+
+            h3 i {
+                left: -40px;
+                font-size: 27px;
+            }
+        }
+
+    }
+}
+
+
+
+// Restuarant statement media query (Phone)
+
+@media (max-width: 480px) {
+
+    .ourRestaurant {
+
+        .chairImage {
+            margin: 50px 0;
+            position: relative;
+
+            .pinkLogo {
+                position: absolute;
+                object-fit: none;
+                right: -1000px;
+                top: -170px;
+            }
+            
+        }
+
+        h2 {
+            width: 100%;
             text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        span {
+            border-bottom: none;
+            padding-bottom: 0;
         }
 
         p {
-            text-align: center;
+            margin: 0 0 50px 0;
         }
 
-        i {
-            left: -1000px;
-        }
-
-        ul {
-            padding: 0;
-            flex-wrap: nowrap;
-            flex-direction: column;
-
-
-            li {
-                padding: 0; 
-            }
-        }
     }
 
 }
 
-}
+// Restuarant statement media query Landscape phone to portrait
 
-// Restuarant statement media query. Phone
+@media (max-width: 768px) {
+    .ourRestaurant {
 
-@media (min-width:320px) and (max-width: 480px) {
+        .chairImage {
+            margin: 50px 0;
+            position: relative;
 
+            .pinkLogo {
+                right: -1000px;
+            }
+            
+        }
 
-.ourRestaurant {
-
-    .chairImage {
-        margin: 50px 0;
-        position: relative;
-
-        .pinkLogo {
-            position: absolute;
-            object-fit: none;
-            right: -1000px;
-            top: -170px;
+        h2 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
         }
         
-    }
+        span {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
 
-    h2 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    span {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
+        p {
+            margin: 0 0 50px 0;
+        }
 
-    p {
-        margin: 0 0 50px 0;
     }
-
 }
 
+
+@media (max-width: 980px) {
+    .ourRestaurant {
+        padding: 50px 0;
+
+        .chairImage {
+            margin: 50px 0;
+            position: relative;
+
+            .pinkLogo {
+                top: -245px;
+            }
+            
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        span {
+            padding-bottom: 0;
+        }
+
+        p {
+            margin: 0 0 50px 0;
+        }
+
+    }
 }
 
 // Image Gallery (Phone) 
-@media (min-width:320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .gallery {
         
-
         img {
-            width: 50%;
+            width: calc(100% / 3);
         }
     }
 }
 
-// Quote Media Query 
+// Quote Media Query (Phone)
 
-@media (min-width:320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .quoteMain {
         .wrapper {
             padding: 20px 0;
@@ -160,9 +338,47 @@
     }
 }
 
-// Footer Media Query 
+// Quote Media landscape to tablet 
 
-@media (min-width:320px) and (max-width: 480px) {
+@media (max-width: 768px) {
+    .quoteMain {
+        .wrapper {
+            padding: 20px 0;
+                
+            h2 {
+                font-size: 28px;
+            }
+                
+            P {
+                margin-top: 20px;
+                font-size: 18px;
+
+                .fa-quote-left,
+                .fa-quote-right {
+                    left: -1000px;
+                }     
+            }
+
+            span {
+                border-bottom: none;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .quoteMain {
+        .wrapper {
+            padding: 100px;
+        }
+    }
+
+}
+
+// Footer Media Query (Phone) 
+
+@media (max-width: 480px) {
     .footerFlexBox {
         flex-direction: column;
 
@@ -178,8 +394,6 @@
         .arrowButton, .socialIcons {
             justify-content: center;
         }
-    
-
     }
 
     #footNote p {
@@ -187,6 +401,48 @@
         text-align: center;
     }
 
+}
+
+// Footer Landscape phone to portrait
+
+@media (max-width: 768px) {
+    .footerFlexBox {
+
+        .footerContact, .recentPosts, .subscribe {
+            margin: 0;
+        }
+
+        h3, h4, 
+        li, p {
+            text-align: center;
+        }
+
+        .arrowButton, .socialIcons {
+            justify-content: center;
+        }
+    }
+
+    #footNote p {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 980px) {
+    .footerFlexBox {
+
+        .footerContact, 
+        .recentPosts, 
+        .subscribe {
+            margin: 0;
+        }
+
+    }
+
+    #footNote p {
+        padding: 10px 0;
+        text-align: center;
+    }
 }
 
 
