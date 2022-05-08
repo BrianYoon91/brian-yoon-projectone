@@ -1,6 +1,6 @@
 // Header Phone Media Query (phone) 
 @media (max-width: 480px) {
-    header {
+    header, #blog, #contact {
         height: 60vh;
         background-color: rgba(240, 236, 236, 0.89);
 
@@ -28,7 +28,7 @@
 
 // Header Landscape phone to portrait. 
 @media (max-width: 768px) {
-    header {
+    header, #blog, #contact {
         height: 60vh;
         background-color: rgba(240, 236, 236, 0.89);
 
@@ -56,7 +56,7 @@
 
 
 @media (max-width: 980px) {
-    header {
+    header, #blog, #contact {
         height: 70vh;
         background-color: rgba(240, 236, 236, 0.89);
 
@@ -151,6 +151,10 @@
 
             .recipeText {
                 padding: 20px 0;
+
+                h2 span {
+                    padding-bottom: 0;
+                }
             }
         }
 

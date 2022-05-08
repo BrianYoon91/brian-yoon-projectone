@@ -15,6 +15,18 @@
     .navBar ul {
         display: flex;
         margin: 0;
+
+        a:hover, a:focus,
+        i:hover, i:focus  {
+            color: #539908;
+            
+        }
+
+        a:visited,
+        i:visited {
+            text-decoration: none;
+            
+        }
     }
     
     .navBar li:nth-child(7) {

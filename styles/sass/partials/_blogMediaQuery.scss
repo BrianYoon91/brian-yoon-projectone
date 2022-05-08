@@ -1,0 +1,44 @@
+@media (max-width: 480px) {
+
+    .recipeBlog {
+    margin-top: 100px;
+        h2, .blogDate {
+            text-align: center;
+        }
+    }
+
+    .aboutAuthor {
+        .authorPortrait {
+            flex-basis: 0;
+        }
+    }
+
+    .relatedPosts h4 {
+        text-align: center;
+    }
+
+    .blogGallery {
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    .commentSection {
+        .commentPortrait {
+            flex-basis: 0;
+        }
+    }
+
+    .commentFormBox {
+        h4, p {
+            text-align: center;
+        }
+        .commentForm {
+            input {
+                width: 100%;
+                flex-basis: 0;
+            }
+        }
+    }
+
+}

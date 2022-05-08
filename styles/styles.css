@@ -413,7 +413,12 @@ header .navBar ul {
 }
 header .navBar ul a:hover, header .navBar ul a:focus,
 header .navBar ul i:hover, header .navBar ul i:focus {
-  color: rgb(104, 241, 104);
+  color: #539908;
+}
+header .navBar ul a:visited,
+header .navBar ul i:visited {
+  text-decoration: none;
+  color: none;
 }
 header .navBar li:first-child {
   color: #539908;
@@ -469,7 +474,7 @@ header .navBar li:first-child {
   display: flex;
   padding: 20px;
   background-color: #f6f6f6;
-  padding: 100px;
+  padding: 50px;
 }
 .recipes .optionsText h3 {
   position: relative;
@@ -733,6 +738,14 @@ header .navBar li:first-child {
   display: flex;
   margin: 0;
 }
+#contact .navBar ul a:hover, #contact .navBar ul a:focus,
+#contact .navBar ul i:hover, #contact .navBar ul i:focus {
+  color: #539908;
+}
+#contact .navBar ul a:visited,
+#contact .navBar ul i:visited {
+  text-decoration: none;
+}
 #contact .navBar li:nth-child(7) {
   color: #539908;
 }
@@ -844,6 +857,14 @@ header .navBar li:first-child {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+}
+#blog .navBar ul a:hover, #blog .navBar ul a:focus,
+#blog .navBar ul i:hover, #blog .navBar ul i:focus {
+  color: #539908;
+}
+#blog .navBar ul a:visited,
+#blog .navBar ul i:visited {
+  text-decoration: none;
 }
 #blog .navBar li:nth-child(5) {
   color: #539908;
@@ -1003,11 +1024,11 @@ header .navBar li:first-child {
 }
 
 @media (max-width: 480px) {
-  header {
+  header, #blog, #contact {
     height: 60vh;
     background-color: rgba(240, 236, 236, 0.89);
   }
-  header .wrapper {
+  header .wrapper, #blog .wrapper, #contact .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1016,11 +1037,11 @@ header .navBar li:first-child {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .wrapper h1 {
+  header .wrapper h1, #blog .wrapper h1, #contact .wrapper h1 {
     text-align: center;
     margin-bottom: 50px;
   }
-  header .navBar ul {
+  header .navBar ul, #blog .navBar ul, #contact .navBar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1030,16 +1051,16 @@ header .navBar li:first-child {
             align-items: center;
     padding: 0;
   }
-  header .navBar li {
+  header .navBar li, #blog .navBar li, #contact .navBar li {
     padding: 5px 0;
   }
 }
 @media (max-width: 768px) {
-  header {
+  header, #blog, #contact {
     height: 60vh;
     background-color: rgba(240, 236, 236, 0.89);
   }
-  header .wrapper {
+  header .wrapper, #blog .wrapper, #contact .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1048,11 +1069,11 @@ header .navBar li:first-child {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .wrapper h1 {
+  header .wrapper h1, #blog .wrapper h1, #contact .wrapper h1 {
     text-align: center;
     margin-bottom: 50px;
   }
-  header .navBar ul {
+  header .navBar ul, #blog .navBar ul, #contact .navBar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1062,16 +1083,16 @@ header .navBar li:first-child {
             align-items: center;
     padding: 0;
   }
-  header .navBar li {
+  header .navBar li, #blog .navBar li, #contact .navBar li {
     padding: 5px 0;
   }
 }
 @media (max-width: 980px) {
-  header {
+  header, #blog, #contact {
     height: 70vh;
     background-color: rgba(240, 236, 236, 0.89);
   }
-  header .wrapper {
+  header .wrapper, #blog .wrapper, #contact .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1080,11 +1101,11 @@ header .navBar li:first-child {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .wrapper h1 {
+  header .wrapper h1, #blog .wrapper h1, #contact .wrapper h1 {
     text-align: start;
     margin-bottom: 50px;
   }
-  header .navBar ul {
+  header .navBar ul, #blog .navBar ul, #contact .navBar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1094,7 +1115,7 @@ header .navBar li:first-child {
             align-items: flex-start;
     padding: 0;
   }
-  header .navBar li {
+  header .navBar li, #blog .navBar li, #contact .navBar li {
     padding: 5px 0;
   }
 }
@@ -1154,6 +1175,9 @@ header .navBar li:first-child {
   }
   .recipes .redLettuceFlexbox .recipeText {
     padding: 20px 0;
+  }
+  .recipes .redLettuceFlexbox .recipeText h2 span {
+    padding-bottom: 0;
   }
   .recipes .tacoFlexbox {
     -webkit-box-orient: vertical;
@@ -1358,5 +1382,43 @@ header .navBar li:first-child {
   #footNote p {
     padding: 10px 0;
     text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .recipeBlog {
+    margin-top: 100px;
+  }
+  .recipeBlog h2, .recipeBlog .blogDate {
+    text-align: center;
+  }
+
+  .aboutAuthor .authorPortrait {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+
+  .relatedPosts h4 {
+    text-align: center;
+  }
+
+  .blogGallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .commentSection .commentPortrait {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+
+  .commentFormBox h4, .commentFormBox p {
+    text-align: center;
+  }
+  .commentFormBox .commentForm input {
+    width: 100%;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
   }
 }
