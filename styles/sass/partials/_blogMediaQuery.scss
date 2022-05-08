@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 660px) {
 
     .recipeBlog {
     margin-top: 100px;
@@ -30,13 +30,23 @@
     }
 
     .commentFormBox {
+
         h4, p {
             text-align: center;
         }
+
         .commentForm {
-            input {
+            
+            #name, 
+            #email, 
+            #website {
+                flex-basis: 100%;
                 width: 100%;
-                flex-basis: 0;
+                margin-bottom: 10px;
+            }
+
+            .theButton {
+                margin: 0 auto;
             }
         }
     }

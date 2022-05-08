@@ -1,6 +1,7 @@
 // Header Phone Media Query (phone) 
 @media (max-width: 480px) {
-    header, #blog, #contact {
+
+    header, #blog {
         height: 60vh;
         background-color: rgba(240, 236, 236, 0.89);
 
@@ -12,51 +13,24 @@
                 text-align: center;
                 margin-bottom: 50px;
             }
+
+            .navBar ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+    
+            .navBar li {
+                padding: 5px 0;
+            }
         }
 
-        .navBar ul {
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
-        }
-
-        .navBar li {
-            padding: 5px 0;
-        }
     }
 }
 
 // Header Landscape phone to portrait. 
 @media (max-width: 768px) {
-    header, #blog, #contact {
-        height: 60vh;
-        background-color: rgba(240, 236, 236, 0.89);
-
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-
-            h1 {
-                text-align: center;
-                margin-bottom: 50px;
-            }
-        }
-
-        .navBar ul {
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
-        }
-
-        .navBar li {
-            padding: 5px 0;
-        }
-    }
-}
-
-
-@media (max-width: 980px) {
-    header, #blog, #contact {
+    header, #blog {
         height: 70vh;
         background-color: rgba(240, 236, 236, 0.89);
 
@@ -65,20 +39,49 @@
             flex-direction: column;
 
             h1 {
-                text-align: start;
+                text-align: center;
                 margin-bottom: 50px;
+            }
+
+            .navBar ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+    
+            .navBar li {
+                padding: 5px 0;
+            }
+        }
+        
+    }
+}
+
+
+@media (max-width: 980px) {
+
+    header, #blog {
+        height: 70vh;
+        background-color: rgba(240, 236, 236, 0.89);
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .navBar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navBar li {
+                padding: 5px 0;
             }
         }
 
-        .navBar ul {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0;
-        }
 
-        .navBar li {
-            padding: 5px 0;
-        }
     }
 }
 

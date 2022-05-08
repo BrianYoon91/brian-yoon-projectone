@@ -1024,11 +1024,11 @@ header .navBar li:first-child {
 }
 
 @media (max-width: 480px) {
-  header, #blog, #contact {
+  header, #blog {
     height: 60vh;
     background-color: rgba(240, 236, 236, 0.89);
   }
-  header .wrapper, #blog .wrapper, #contact .wrapper {
+  header .wrapper, #blog .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1037,11 +1037,11 @@ header .navBar li:first-child {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .wrapper h1, #blog .wrapper h1, #contact .wrapper h1 {
+  header .wrapper h1, #blog .wrapper h1 {
     text-align: center;
     margin-bottom: 50px;
   }
-  header .navBar ul, #blog .navBar ul, #contact .navBar ul {
+  header .wrapper .navBar ul, #blog .wrapper .navBar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1051,16 +1051,16 @@ header .navBar li:first-child {
             align-items: center;
     padding: 0;
   }
-  header .navBar li, #blog .navBar li, #contact .navBar li {
+  header .wrapper .navBar li, #blog .wrapper .navBar li {
     padding: 5px 0;
   }
 }
 @media (max-width: 768px) {
-  header, #blog, #contact {
-    height: 60vh;
+  header, #blog {
+    height: 70vh;
     background-color: rgba(240, 236, 236, 0.89);
   }
-  header .wrapper, #blog .wrapper, #contact .wrapper {
+  header .wrapper, #blog .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1069,11 +1069,11 @@ header .navBar li:first-child {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .wrapper h1, #blog .wrapper h1, #contact .wrapper h1 {
+  header .wrapper h1, #blog .wrapper h1 {
     text-align: center;
     margin-bottom: 50px;
   }
-  header .navBar ul, #blog .navBar ul, #contact .navBar ul {
+  header .wrapper .navBar ul, #blog .wrapper .navBar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1083,16 +1083,16 @@ header .navBar li:first-child {
             align-items: center;
     padding: 0;
   }
-  header .navBar li, #blog .navBar li, #contact .navBar li {
+  header .wrapper .navBar li, #blog .wrapper .navBar li {
     padding: 5px 0;
   }
 }
 @media (max-width: 980px) {
-  header, #blog, #contact {
+  header, #blog {
     height: 70vh;
     background-color: rgba(240, 236, 236, 0.89);
   }
-  header .wrapper, #blog .wrapper, #contact .wrapper {
+  header .wrapper, #blog .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1101,21 +1101,20 @@ header .navBar li:first-child {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .wrapper h1, #blog .wrapper h1, #contact .wrapper h1 {
-    text-align: start;
+  header .wrapper h1, #blog .wrapper h1 {
+    text-align: center;
     margin-bottom: 50px;
   }
-  header .navBar ul, #blog .navBar ul, #contact .navBar ul {
+  header .wrapper .navBar ul, #blog .wrapper .navBar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  header .navBar li, #blog .navBar li, #contact .navBar li {
+  header .wrapper .navBar li, #blog .wrapper .navBar li {
     padding: 5px 0;
   }
 }
@@ -1384,7 +1383,7 @@ header .navBar li:first-child {
     text-align: center;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 660px) {
   .recipeBlog {
     margin-top: 100px;
   }
@@ -1416,9 +1415,15 @@ header .navBar li:first-child {
   .commentFormBox h4, .commentFormBox p {
     text-align: center;
   }
-  .commentFormBox .commentForm input {
+  .commentFormBox .commentForm #name,
+.commentFormBox .commentForm #email,
+.commentFormBox .commentForm #website {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     width: 100%;
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
+    margin-bottom: 10px;
+  }
+  .commentFormBox .commentForm .theButton {
+    margin: 0 auto;
   }
 }
