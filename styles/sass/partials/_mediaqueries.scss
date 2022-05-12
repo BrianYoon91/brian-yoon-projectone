@@ -1,23 +1,38 @@
 @media (max-width: 1280px) {
     #homePage, #blog, #contact {
+        background: #F6F6F6;
         height: 100%;
 
-        .wrapper {
+            .wrapper {
             display: flex;
             flex-direction: column;
 
             h1 {
                 text-align: center;
                 margin-bottom: 50px;
+                color:#539908;
             }
-            .navBar ul {
+            .navBar {
+                
+                ul {
                 flex-direction: column;
                 align-items: center;
                 padding: 0;
+                    li {
+                        padding: 5px 0;
+                        display: none;
+                    }
+                    
+                    li:last-child {
+                        display: block;
+                        font-size: 30px;
+                    }
+
+                }  
             }
-            .navBar li {
-                padding: 5px 0;
-            }
+
+            
+
         }
 
     }
@@ -109,6 +124,18 @@
 }
 
 // Main Section Tablet and Small Desktops
+@media (max-width: 1280px) {
+    .recipes {
+        .recipeText {
+            padding: 50px; 
+
+            h2 span {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+}
 
 @media (max-width: 980px) {
     .recipes {
@@ -123,7 +150,13 @@
 
         .recipeText, 
         .optionsText {
-            padding: 10px;
+            padding: 20px;
+        }
+
+        .recipeText {
+            h2 span {
+                padding-bottom: 0;
+            }
         }
 
         .optionsText {
@@ -151,7 +184,7 @@
             flex-direction: column;
 
             .recipeText {
-                padding: 20px 0;
+                padding: 20px;
 
                 h2 span {
                     padding-bottom: 0;
