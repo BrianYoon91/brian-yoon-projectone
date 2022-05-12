@@ -420,6 +420,9 @@ a, a:visited {
 #homePage .navBar ul i:visited {
   text-decoration: none;
 }
+#homePage .navBar ul .burger {
+  display: none;
+}
 #homePage .navBar li:first-child {
   color: #539908;
 }
@@ -1052,13 +1055,12 @@ a, a:visited {
             align-items: center;
     padding: 0;
   }
+  #homePage .wrapper .navBar ul .burger, #blog .wrapper .navBar ul .burger, #contact .wrapper .navBar ul .burger {
+    display: block;
+  }
   #homePage .wrapper .navBar ul li, #blog .wrapper .navBar ul li, #contact .wrapper .navBar ul li {
     padding: 5px 0;
     display: none;
-  }
-  #homePage .wrapper .navBar ul li:last-child, #blog .wrapper .navBar ul li:last-child, #contact .wrapper .navBar ul li:last-child {
-    display: block;
-    font-size: 30px;
   }
 }
 @media (max-width: 980px) {

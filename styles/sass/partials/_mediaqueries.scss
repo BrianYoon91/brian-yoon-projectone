@@ -18,15 +18,19 @@
                 flex-direction: column;
                 align-items: center;
                 padding: 0;
+                    
+                    .burger {
+                        display: block;
+                    }
+
                     li {
                         padding: 5px 0;
                         display: none;
+
+                        
                     }
                     
-                    li:last-child {
-                        display: block;
-                        font-size: 30px;
-                    }
+                    
 
                 }  
             }
