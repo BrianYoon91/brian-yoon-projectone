@@ -13,10 +13,10 @@
         max-width: 90%;
     }
 
-    
     .navBar {
-            ul {
-                
+
+            .menu {
+            
             display: flex;
             margin: 0;
 
@@ -30,11 +30,12 @@
                 i:visited {
                     text-decoration: none;
                 }
-
-                .burger {
-                    display: none;
-                }
             
+        }
+
+        .hamburger {
+            display: none;
+        
         }
     }
     

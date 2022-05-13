@@ -406,21 +406,21 @@ a, a:visited {
   padding: 50px 0;
   max-width: 90%;
 }
-#homePage .navBar ul {
+#homePage .navBar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
-#homePage .navBar ul a:hover, #homePage .navBar ul a:focus,
-#homePage .navBar ul i:hover, #homePage .navBar ul i:focus {
+#homePage .navBar .menu a:hover, #homePage .navBar .menu a:focus,
+#homePage .navBar .menu i:hover, #homePage .navBar .menu i:focus {
   color: #539908;
 }
-#homePage .navBar ul a:visited,
-#homePage .navBar ul i:visited {
+#homePage .navBar .menu a:visited,
+#homePage .navBar .menu i:visited {
   text-decoration: none;
 }
-#homePage .navBar ul .burger {
+#homePage .navBar .hamburger {
   display: none;
 }
 #homePage .navBar li:first-child {
@@ -735,21 +735,24 @@ a, a:visited {
   padding: 50px 0;
   max-width: 90%;
 }
-#contact .navBar ul {
+#contact .hamburger {
+  display: none;
+}
+#contact .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
-#contact .navBar ul a:hover, #contact .navBar ul a:focus,
-#contact .navBar ul i:hover, #contact .navBar ul i:focus {
+#contact .menu a:hover, #contact .menu a:focus,
+#contact .menu i:hover, #contact .menu i:focus {
   color: #539908;
 }
-#contact .navBar ul a:visited,
-#contact .navBar ul i:visited {
+#contact .menu a:visited,
+#contact .menu i:visited {
   text-decoration: none;
 }
-#contact .navBar li:nth-child(7) {
+#contact .menu li:nth-child(7) {
   color: #539908;
 }
 
@@ -1045,7 +1048,35 @@ a, a:visited {
     margin-bottom: 50px;
     color: #539908;
   }
-  #homePage .wrapper .navBar ul, #blog .wrapper .navBar ul, #contact .wrapper .navBar ul {
+  #homePage .wrapper .navBar, #blog .wrapper .navBar, #contact .wrapper .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #homePage .wrapper .navBar .hamburger, #blog .wrapper .navBar .hamburger, #contact .wrapper .navBar .hamburger {
+    display: block;
+    font-size: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  #homePage .wrapper .navBar .menu.show, #blog .wrapper .navBar .menu.show, #contact .wrapper .navBar .menu.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1055,12 +1086,15 @@ a, a:visited {
             align-items: center;
     padding: 0;
   }
-  #homePage .wrapper .navBar ul .burger, #blog .wrapper .navBar ul .burger, #contact .wrapper .navBar ul .burger {
-    display: block;
-  }
-  #homePage .wrapper .navBar ul li, #blog .wrapper .navBar ul li, #contact .wrapper .navBar ul li {
-    padding: 5px 0;
+  #homePage .wrapper .navBar .menu, #blog .wrapper .navBar .menu, #contact .wrapper .navBar .menu {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #homePage .wrapper .navBar .menu li, #blog .wrapper .navBar .menu li, #contact .wrapper .navBar .menu li {
+    padding: 5px 0;
   }
 }
 @media (max-width: 980px) {
@@ -1485,6 +1519,40 @@ a, a:visited {
   }
 }
 @media (max-width: 980px) {
+  .navBar .hamburger {
+    display: block;
+    font-size: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .navBar .menu.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .navBar .menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .formSection .contactDetails,
 .formSection .formContainer {
     padding: 0;
