@@ -1,4 +1,27 @@
 @media (max-width: 680px) {
+    .wrapper{
+        .navBar {
+            .hamburger {
+                display: block;
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                background-color: transparent;
+                border: 0;
+                cursor: pointer;
+            }
+            .menu.show {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+            .menu {
+                display: none;
+                flex-direction: column;
+            }
+        }
+    }
 
     .recipeBlog {
     margin-top: 100px;

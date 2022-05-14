@@ -858,19 +858,22 @@ a, a:visited {
   padding: 50px 0;
   max-width: 90%;
 }
-#blog .navBar ul {
+#blog .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
-#blog .navBar ul a:hover, #blog .navBar ul a:focus,
-#blog .navBar ul i:hover, #blog .navBar ul i:focus {
+#blog .menu a:hover, #blog .menu a:focus,
+#blog .menu i:hover, #blog .menu i:focus {
   color: #539908;
 }
-#blog .navBar ul a:visited,
-#blog .navBar ul i:visited {
+#blog .menu a:visited,
+#blog .menu i:visited {
   text-decoration: none;
+}
+#blog .hamburger {
+  display: none;
 }
 #blog .navBar li:nth-child(5) {
   color: #539908;
@@ -1475,6 +1478,40 @@ a, a:visited {
   }
 }
 @media (max-width: 680px) {
+  .wrapper .navBar .hamburger {
+    display: block;
+    font-size: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .wrapper .navBar .menu.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .wrapper .navBar .menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .recipeBlog {
     margin-top: 100px;
   }
