@@ -12,25 +12,29 @@
         max-width: 90%;
     }
 
-    .hamburger {
-        display: none;
-    
-    }
-    
-    .menu {
+    .navBar {
+
+        .menu {
+        
         display: flex;
         margin: 0;
 
-        a:hover, a:focus,
-        i:hover, i:focus  {
-            color: #539908;
-            
+            a:hover, a:focus,
+            i:hover, i:focus  {
+                color: #539908;
+                
+            }
+
+            a:visited, 
+            i:visited {
+                text-decoration: none;
+            }
+        
         }
 
-        a:visited,
-        i:visited {
-            text-decoration: none;
-            
+        .hamburger {
+            display: none;
+        
         }
     }
     

@@ -735,22 +735,22 @@ a, a:visited {
   padding: 50px 0;
   max-width: 90%;
 }
-#contact .hamburger {
-  display: none;
-}
-#contact .menu {
+#contact .navBar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
-#contact .menu a:hover, #contact .menu a:focus,
-#contact .menu i:hover, #contact .menu i:focus {
+#contact .navBar .menu a:hover, #contact .navBar .menu a:focus,
+#contact .navBar .menu i:hover, #contact .navBar .menu i:focus {
   color: #539908;
 }
-#contact .menu a:visited,
-#contact .menu i:visited {
+#contact .navBar .menu a:visited,
+#contact .navBar .menu i:visited {
   text-decoration: none;
+}
+#contact .navBar .hamburger {
+  display: none;
 }
 #contact .menu li:nth-child(7) {
   color: #539908;
@@ -1519,7 +1519,7 @@ a, a:visited {
   }
 }
 @media (max-width: 980px) {
-  .navBar .hamburger {
+  .wrapper .navBar .hamburger {
     display: block;
     font-size: 40px;
     display: -webkit-box;
@@ -1532,7 +1532,7 @@ a, a:visited {
     border: 0;
     cursor: pointer;
   }
-  .navBar .menu.show {
+  .wrapper .navBar .menu.show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1545,7 +1545,7 @@ a, a:visited {
             align-items: center;
     padding: 0;
   }
-  .navBar .menu {
+  .wrapper .navBar .menu {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
