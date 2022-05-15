@@ -25,8 +25,21 @@ img {
     line-height: 24px;
     font-size: 14px;
     font-weight: bold;
+}
+
+.theButton,
+.contactButton,
+.arrowButton {
+    cursor: pointer;
 
 }
+
+.hamburger:hover,
+.hamburger:focus {
+    color:#539908;
+}
+
+
 
 a, a:visited {
     color: inherit;
