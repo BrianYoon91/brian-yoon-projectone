@@ -7,6 +7,7 @@ burgerMenu.addEventListener('click', ()=>{
     menu.classList.toggle('show');
 })
 
+
 // Contact form popout after submission 
 
 const formSubmit = document.querySelector('.contactForm');
